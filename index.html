@@ -133,6 +133,9 @@
     <li><strong>お問い合わせ時の情報</strong><br>
       ユーザーが問い合わせを行う際、メールアドレスなど連絡に必要な情報を取得する場合があります。
     </li>
+    <li><strong>プッシュ通知のための情報</strong><br>
+      締切や結果のお知らせを送るため、Google の Firebase Cloud Messaging が発行する通知用の識別子（トークン）と、端末を区別するためのID（Android ID）を開発者のサーバーに保存します。氏名・メールアドレスなどの個人情報は含みません。通知は、端末の設定でいつでも止められます。
+    </li>
   </ul>
 
   <h2>2. 収集した情報の利用目的</h2>
@@ -141,6 +144,7 @@
     <li>広告表示および広告効果の測定のため</li>
     <li>不具合の解析・品質向上のため</li>
     <li>ユーザーからの問い合わせ対応のため</li>
+    <li>プッシュ通知の送信</li>
   </ul>
 
   <h2>3. 第三者提供について</h2>
@@ -150,6 +154,7 @@
   <ul>
     <li><strong>Google（AdMob）</strong><br>
       広告配信のため、Google が広告IDや端末情報を利用します。<br>
+      プッシュ通知の配信のため、Google（Firebase Cloud Messaging）が通知用の識別子を利用します。<br>
       Google のプライバシーポリシー：<br>
       <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">
         https://policies.google.com/privacy
